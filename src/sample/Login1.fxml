@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="530.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="452.0" styleClass="blue-panel" stylesheets="@styles.css">
+         <children>
+            <Label alignment="CENTER" text="Football Mangement System" textFill="#2208eb">
+               <font>
+                  <Font name="Monotype Corsiva" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="70.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="127.0" text="Sign In" textAlignment="CENTER" textFill="#2196f3">
+               <font>
+                  <Font name="Monotype Corsiva" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="UserText" promptText="Username" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="245.0" prefHeight="56.0" prefWidth="480.0">
+               <children>
+                  <PasswordField fx:id="passwordText" prefHeight="31.0" prefWidth="399.0" promptText="Password" styleClass="tf_box">
+                     <font>
+                        <Font size="19.0" />
+                     </font></PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" prefHeight="38.0" prefWidth="472.0" styleClass="blue-btn" text="Sign In" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

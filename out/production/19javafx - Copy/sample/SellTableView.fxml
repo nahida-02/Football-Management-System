@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="1100.0" style="-fx-background-color: #ffff0f; -fx-border-width: 10; -fx-border-color: #0fbbff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SellTableViewController">
+    <children>
+        <TableView fx:id="tableview" layoutX="15.0" layoutY="120.0" prefHeight="367.0" prefWidth="1070.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="174.0" text="Name" />
+            <TableColumn fx:id="clubname" prefWidth="159.0" text="Club" />
+            <TableColumn fx:id="country" prefWidth="136.0" text="Country" />
+            <TableColumn fx:id="age" prefWidth="103.0" text="Age" />
+            <TableColumn fx:id="height" prefWidth="112.0" text="Height" />
+            <TableColumn fx:id="position" prefWidth="144.0" text="Position" />
+            <TableColumn fx:id="number" prefWidth="107.0" text="Number" />
+            <TableColumn fx:id="weekly_salary" prefWidth="134.0" text="Weekly Salary" />
+         </columns></TableView>
+        <Button fx:id="SellButton" layoutX="930.0" layoutY="535.0" mnemonicParsing="false" onAction="#SellButtonAction" prefHeight="44.0" prefWidth="110.0" stylesheets="@styles.css" text="Sell">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="backbutton" layoutX="57.0" layoutY="539.0" mnemonicParsing="false" onAction="#backbuttonAction" prefHeight="44.0" prefWidth="110.0" stylesheets="@styles.css" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextField fx:id="selllabelButton" layoutX="650.0" layoutY="532.0" prefHeight="50.0" prefWidth="206.0" />
+      <AnchorPane prefHeight="112.0" prefWidth="1106.0" style="-fx-background-color: #a3f571; -fx-opacity: .8;">
+         <children>
+            <Label fx:id="labelButton" layoutX="236.0" layoutY="31.0" prefHeight="59.0" prefWidth="780.0" text="Label">
+               <font>
+                  <Font name="Algerian" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="295.0" layoutY="535.0" mnemonicParsing="false" onAction="#detailButtonAction" prefHeight="44.0" prefWidth="110.0" stylesheets="@styles.css" text="Detail">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="567.0" layoutY="543.0" prefHeight="21.0" prefWidth="59.0" text="Price $">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

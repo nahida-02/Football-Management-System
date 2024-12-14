@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SellTableViewController">
+    <children>
+        <TableView fx:id="tableview" layoutX="7.0" layoutY="45.0" prefHeight="355.0" prefWidth="752.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="124.0" text="Name" />
+            <TableColumn fx:id="clubname" text="Club" />
+            <TableColumn fx:id="country" prefWidth="101.0" text="Country" />
+            <TableColumn fx:id="age" prefWidth="67.0" text="Age" />
+            <TableColumn fx:id="height" prefWidth="84.0" text="Height" />
+            <TableColumn fx:id="position" prefWidth="110.0" text="Position" />
+            <TableColumn fx:id="number" prefWidth="68.0" text="Number" />
+            <TableColumn fx:id="weekly_salary" prefWidth="117.0" text="Weekly Salary" />
+         </columns></TableView>
+        <Button fx:id="SellButton" layoutX="597.0" layoutY="443.0" mnemonicParsing="false" onAction="#SellButtonAction" prefHeight="31.0" prefWidth="91.0" text="Sell" />
+      <Button fx:id="backbutton" layoutX="55.0" layoutY="443.0" mnemonicParsing="false" onAction="#backbuttonAction" text="Back" />
+    </children>
+</AnchorPane>

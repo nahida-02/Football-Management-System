@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="1100.0" style="-fx-background-color: #ffff0f; -fx-border-color: #0fbbff; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerlistTableViewController">
+    <children>
+        <TableView fx:id="tableview" layoutX="13.0" layoutY="139.0" prefHeight="367.0" prefWidth="1070.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="166.0" text="Name" />
+            <TableColumn fx:id="clubname" prefWidth="184.0" text="Club" />
+            <TableColumn fx:id="country" prefWidth="146.0" text="Country" />
+            <TableColumn fx:id="age" prefWidth="104.0" text="Age" />
+            <TableColumn fx:id="height" prefWidth="111.0" text="Height" />
+            <TableColumn fx:id="position" prefWidth="131.0" text="Position" />
+            <TableColumn fx:id="number" prefWidth="109.0" text="Number" />
+            <TableColumn fx:id="weekly_salary" prefWidth="118.0" text="Weekly Salary" />
+         </columns></TableView>
+      <Button fx:id="backbutton" layoutX="104.0" layoutY="543.0" mnemonicParsing="false" onAction="#backbuttonAction" prefHeight="41.0" prefWidth="109.0" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <AnchorPane prefHeight="118.0" prefWidth="1106.0" style="-fx-background-color: #ff0ff6; -fx-border-style: dotted; -fx-opacity: .2;" />
+      <Label fx:id="playerclubLabel" layoutX="391.0" layoutY="25.0" prefHeight="69.0" prefWidth="394.0">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="detailButton" layoutX="906.0" layoutY="543.0" mnemonicParsing="false" onAction="#detailButtonAction" prefHeight="41.0" prefWidth="109.0" text="Detail">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="363.0" layoutY="544.0" mnemonicParsing="false" onAction="#refreshbuttonAction" prefHeight="40.0" prefWidth="109.0" text="Refresh">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

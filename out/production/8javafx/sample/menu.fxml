@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2017, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuController">
+   <children>
+      <MenuButton layoutX="302.0" layoutY="125.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="62.0" prefWidth="143.0" text="Search Players">
+        <items>
+          <MenuItem fx:id="Player_name" mnemonicParsing="false" onAction="#searchPlayerName" text="By Player Name" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem fx:id="Country_Name" mnemonicParsing="false" onAction="#searchCountryName" text="By Country" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="Position" mnemonicParsing="false" onAction="#searchPosition" text="By Position" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="salaryrange" mnemonicParsing="false" onAction="#salaryrangeAction" text="By Salary Range" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+        </items>
+      </MenuButton>
+      <Button fx:id="countryplayercount" layoutX="302.0" layoutY="226.0" mnemonicParsing="false" onAction="#countryplayercountAction" prefHeight="62.0" prefWidth="143.0" text="Country-wise Player Count" />
+      <MenuButton layoutX="302.0" layoutY="323.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="62.0" prefWidth="143.0" text="Search Maximum">
+        <items>
+          <MenuItem fx:id="salary" mnemonicParsing="false" onAction="#salaryAction" text="Salary" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem fx:id="age" mnemonicParsing="false" onAction="#ageAction" text="Age" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="height" mnemonicParsing="false" onAction="#heightAction" text="Height" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="totalsalary" mnemonicParsing="false" onAction="#totalsalaryAction" text="Total Salary" />
+        </items>
+      </MenuButton>
+      <Button fx:id="logout" layoutX="618.0" layoutY="400.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="41.0" prefWidth="75.0" text="Logout" />
+      <JFXButton fx:id="sellbutton" layoutX="570.0" layoutY="125.0" onAction="#sellAction" prefHeight="62.0" prefWidth="143.0" ripplerFill="#462fb9" text="Sell" />
+      <JFXButton fx:id="BuyButton" layoutX="589.0" layoutY="242.0" onAction="#BuyButtonAction" prefHeight="41.0" prefWidth="113.0" text="Buy" />
+      <Button fx:id="playerlistButton" layoutX="304.0" layoutY="26.0" mnemonicParsing="false" onAction="#playerlistButtonAction" prefHeight="62.0" prefWidth="143.0" text="Player List" />
+   </children>
+</AnchorPane>
